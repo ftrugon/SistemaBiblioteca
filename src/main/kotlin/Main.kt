@@ -51,10 +51,18 @@ class Prestamo(val sistemaGestion: SistemaGestion){
     }
 }
 
-class InformeLibro(){
-    fun CrearInformeLibro(){
+class InformeLibro(val sistemaGestion: SistemaGestion){
+    fun generarCompleto(){
         //La logica tal
         println("Generando el informe de libro")
+    }
+
+    fun generarDisponibles(){
+
+    }
+
+    fun generarPrestados(){
+
     }
 }
 
@@ -73,5 +81,6 @@ fun main() {
     gestorPres.prestar(libro1)
     gestorPres.prestar(libro3)
     gestorPres.devolver(libro1)
+
 
 }
